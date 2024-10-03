@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Landing</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Kota Tua Surabaya</h1>
+        <p>Temukan konten terbaik dan terupdate Kota Tua Surabaya.</p>
+        <a href="#daftar" class="cta-button">Mulai Sekarang</a>
+    </header>
+    
+    <section id="gambar">
+        <h2>Selamat Menikmati</h2>
+        <img src="zzz.jpg" alt="Gambar Menarik" class="center-image">
+    </section>
+    
+    <section id="daftar">
+        <h2>Daftar Sekarang</h2>
+        <p>Bergabunglah dengan ribuan pengguna lainnya yang sudah menikmati layanan kami!</p>
+        <form>
+            <input type="email" placeholder="Masukkan email Anda" required>
+            <button type="submit">Berlangganan</button>
+        </form>
+    </section>
+    
+    <section class="features">
+        <h2>Fitur Unggulan Kami</h2>
+        <div class="feature">
+            <i class="fas fa-star"></i>
+            <h3>Kualitas Terbaik</h3>
+            <p>Konten yang kami tawarkan selalu berkualitas dan terpercaya.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-users"></i>
+            <h3>Tim Profesional</h3>
+            <p>Tim kami terdiri dari profesional yang ahli di bidangnya.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-headset"></i>
+            <h3>Support 24/7</h3>
+            <p>Kami siap membantu Anda kapan saja, 24 jam sehari.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p> ZaaAbigail</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#daftar').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
